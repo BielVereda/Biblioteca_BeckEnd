@@ -98,13 +98,13 @@ Um usuário pode possuir **vários empréstimos**.
 1️⃣ Clonar o repositório
 
 ```
-git clone https://github.com/seu-usuario/biblioteca-api
+git clone https://github.com/seu-usuario/biblioteca
 ```
 
 2️⃣ Entrar na pasta
 
 ```
-cd biblioteca-api
+cd biblioteca
 ```
 
 3️⃣ Configurar o banco de dados no arquivo:
@@ -117,7 +117,7 @@ Exemplo:
 
 ```
 spring.datasource.url=jdbc:mysql://localhost:3306/biblioteca_db
-spring.datasource.username=root
+spring.datasource.username=usuario
 spring.datasource.password=senha
 
 spring.jpa.hibernate.ddl-auto=update
@@ -133,7 +133,7 @@ mvn spring-boot:run
 Servidor iniciará em:
 
 ```
-http://localhost:8080
+http://localhost:8080/
 ```
 
 ---
@@ -356,36 +356,6 @@ Resposta:
 
 ---
 
-# 🧪 Ordem recomendada para testes
-
-Para evitar erro de chave estrangeira, siga esta ordem:
-
-1️⃣ Criar usuário
-
-```
-POST http://localhost:8080/usuarios
-```
-
-2️⃣ Criar carteira
-
-```
-POST http://localhost:8080/carteiras
-```
-
-3️⃣ Criar empréstimo
-
-```
-POST http://localhost:8080/emprestimos
-```
-
-4️⃣ Listar empréstimos do usuário
-
-```
-GET http://localhost:8080/usuarios/{id}/emprestimos
-```
-
----
-
 # 🎯 Objetivo da atividade
 
 Este projeto tem como objetivo demonstrar:
@@ -400,4 +370,4 @@ Este projeto tem como objetivo demonstrar:
 
 # 👨‍💻 Autor
 
-Projeto desenvolvido por **Gabriel Vereda** para fins educacionais.
+Projeto desenvolvido por **Biel Vereda** para fins educacionais.
