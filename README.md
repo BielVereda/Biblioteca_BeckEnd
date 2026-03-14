@@ -328,34 +328,6 @@ http://localhost:8080/emprestimos/{id}
 
 ---
 
-# 📖 Listar empréstimos de um usuário
-
-GET
-
-```
-http://localhost:8080/usuarios/{id}/emprestimos
-```
-
-Exemplo:
-
-```
-http://localhost:8080/usuarios/1/emprestimos
-```
-
-Resposta:
-
-```json
-[
-  {
-    "id": 1,
-    "dataEmprestimo": "2026-03-06",
-    "dataDevolucao": "2026-03-20"
-  }
-]
-```
-
----
-
 # 🎯 Objetivo da atividade
 
 Este projeto tem como objetivo demonstrar:
